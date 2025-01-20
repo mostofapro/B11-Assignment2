@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.quicksand-font,
+.raleway-font {
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.quicksand-font{
+  font-family: "Quicksand", serif;
+}
+.raleway-font {
+  font-family: "Raleway", serif;
+}
+
+:root{
+  --primary-color: rgb(17, 17, 17);
+  --semi-primary: rgb(0, 0, 0);
+  --secondary-color: rgb(255, 255, 255);
+  --button-color: rgb(254, 163, 1);
+  --footer-color: rgb(1, 172, 253);
+  --paragraph-color: rgb(128, 128, 128);
+  --sub-heading: rgb(32, 32, 32);
+  --small-button: rgb(149, 178, 38);
+  --purple-color: rgb(93, 88, 239);
+  --sub-button-color: rgb(5, 212, 223);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Shared Styles */
+.section{
+  width: 90vw;
+  margin: 0 auto;
+}
+.display{
+  display: flex;
+}
+
+.logo-title{
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Header Area Styles */
+
+/* Navigation Section */
+.nav-area{
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+}
+
+.logo-area{
+  justify-content: space-around;
+  align-items: center;
+  gap: .5rem;
+}
+
+.logo-title{
+  font-size: 2rem;
+}
+
+.nav-items{
+  gap: 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.nav-list1{
+  color: var(--button-color);
+}
+.nav-list2{
+  color: var(--footer-color);
+}
+.nav-list3{
+  color: var(--sub-button-color);
+}
+.nav-list4{
+  color: var(--purple-color);
+}
+
+.nav-btn{
+  padding: .5rem 2rem;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: .75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+.fa-solid{
+  color: var(--primary-color);
+  display: none;
+}
+
+
+
+
+/* Small Device Responsive */
+@media screen and (max-width: 576px) {
+  .fa-solid{
+    display: block;
+  }
+
+  .section{
+    margin: 0;
+    width: 100vw;
+  }
+  .logo-title,
+  .main-menu,
+  .nav-btn{
+    display: none;
+  }
+
+  .nav-area{
+    border-bottom: .5px solid rgb(254, 163, 1);
+    padding: .5rem;
+  }
+
+  .logo-img{
+    width: 50%;
+  }
+}
