@@ -39,7 +39,7 @@
   width: 90vw;
   margin: 0 auto;
 }
-.display{
+.display-flex{
   display: flex;
 }
 
@@ -55,7 +55,8 @@
 .nav-area{
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem;
+  /* padding: 1.25rem; */
+  margin-top: 1rem;
 }
 
 .logo-area{
@@ -97,9 +98,14 @@
   color: var(--secondary-color);
   cursor: pointer;
 }
-.fa-solid{
+/* .fa-solid,
+.fa-bars{
   color: var(--primary-color);
   display: none;
+} */
+.hidden{
+  display: none;
+  color: var(--primary-color);
 }
 
 /* Banner Section Styles */
@@ -146,12 +152,11 @@
 
 /* Small Device Responsive */
 @media screen and (max-width: 576px) {
-  .fa-solid{
+  .hidden{
     display: block;
   }
-
   .section{
-    margin: 0;
+    margin: 0 auto;
     width: 100vw;
   }
   .logo-title,
@@ -187,5 +192,5 @@
   }
   .banner-description{
     font-size: 1rem;
-}
+  }
 }
