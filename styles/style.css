@@ -49,6 +49,25 @@
   color: var(--primary-color);
 }
 
+.curriculum-card1,
+.curriculum-card2,
+.curriculum-card3{
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 28px 1px rgba(0, 0, 0, 0.05);
+}
+
+.card1-link,
+.card2-link,
+.card3-link{
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 /* Header Area Styles */
 
 /* Navigation Section */
@@ -144,6 +163,67 @@
   cursor: pointer;
 }
 
+/* Main Area Style */
+
+/* Curriculum Section Style */
+.curriculum-container{
+  background-image: url(../assets/bg.png);
+  background-repeat: no-repeat;
+  margin-top: 4rem;
+}
+.curriculum-title{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--semi-primary);
+}
+
+.curriculum-area{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5rem auto;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.curriculum-card1{
+  background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  border: 1px solid rgb(222, 245, 255);
+
+}
+.curriculum-card2{
+  background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  border: 1px solid rgb(255, 244, 220);
+}
+
+.curriculum-card3{
+  background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  border: 1px solid rgb(242, 232, 255);;
+}
+
+.curriculum-card-title{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--sub-heading);
+}
+
+.curriculum-card-description{
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--paragraph-color);
+}
+
+.card1-link{
+  color: var(--footer-color);
+}
+.card2-link{
+  color: var(--button-color);
+}
+.card3-link{
+  color: var(--purple-color);
+}
+
+
 /* Small Device Responsive */
 @media screen and (max-width: 576px) {
   .hamburg-nav{
@@ -151,7 +231,7 @@
   }
   .section{
     margin: 0;
-    width: 100vw;
+    width: 90vw;
   }
   .logo-title,
   .main-menu,
@@ -186,5 +266,12 @@
   }
   .banner-description{
     font-size: 1rem;
-}
+  }
+  .curriculum-area{
+    grid-template-columns: repeat(1, 1fr);
+    margin: 1rem auto;
+  }
+  .curriculum-title{
+    font-size: 1.5rem;
+  }
 }
