@@ -97,7 +97,7 @@
   color: var(--secondary-color);
   cursor: pointer;
 }
-.fa-solid{
+.hamburg-nav{
   color: var(--primary-color);
   display: none;
 }
@@ -146,10 +146,9 @@
 
 /* Small Device Responsive */
 @media screen and (max-width: 576px) {
-  .fa-solid{
+  .hamburg-nav{
     display: block;
   }
-
   .section{
     margin: 0;
     width: 100vw;
