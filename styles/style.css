@@ -56,7 +56,6 @@
   justify-content: space-between;
   align-items: center;
   /* padding: 1.25rem; */
-  margin-top: 1rem;
 }
 
 .logo-area{
@@ -167,7 +166,7 @@
 
   .nav-area{
     border-bottom: .5px solid rgb(254, 163, 1);
-    padding: .5rem;
+    /* padding: .5rem; */
   }
 
   .logo-img{
