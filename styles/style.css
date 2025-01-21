@@ -39,7 +39,7 @@
   width: 90vw;
   margin: 0 auto;
 }
-.display-flex{
+.display{
   display: flex;
 }
 
@@ -55,7 +55,7 @@
 .nav-area{
   justify-content: space-between;
   align-items: center;
-  /* padding: 1.25rem; */
+  padding: 1.25rem;
 }
 
 .logo-area{
@@ -97,14 +97,9 @@
   color: var(--secondary-color);
   cursor: pointer;
 }
-/* .fa-solid,
-.fa-bars{
+.fa-solid{
   color: var(--primary-color);
   display: none;
-} */
-.hidden{
-  display: none;
-  color: var(--primary-color);
 }
 
 /* Banner Section Styles */
@@ -151,11 +146,12 @@
 
 /* Small Device Responsive */
 @media screen and (max-width: 576px) {
-  .hidden{
+  .fa-solid{
     display: block;
   }
+
   .section{
-    margin: 0 auto;
+    margin: 0;
     width: 100vw;
   }
   .logo-title,
@@ -166,7 +162,7 @@
 
   .nav-area{
     border-bottom: .5px solid rgb(254, 163, 1);
-    /* padding: .5rem; */
+    padding: .5rem;
   }
 
   .logo-img{
@@ -191,5 +187,5 @@
   }
   .banner-description{
     font-size: 1rem;
-  }
+}
 }
