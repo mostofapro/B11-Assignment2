@@ -242,6 +242,7 @@
 /* Stories Section Style */
 .stories-area{
   background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+  /* text-align: center; */
 }
 
 .stories-title{
@@ -251,15 +252,106 @@
   font-weight: bold;
 }
 
+.btn-new{
+  text-align: center;
+  padding-bottom: 5rem;
+  justify-content: center;
+}
+
+.story-items{
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
 .item-story1,
 .item-story2,
 .item-story3,
 .item-story4,
 .item-story5{
-  /* background-color: var(--secondary-color); */
   border-radius: 1rem;
+  background: rgb(255, 255, 255);
 }
 
+.story-section2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.story-item-img{
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.story-btn{
+  padding: 10px 18px;
+  border-radius: 3rem;
+  border: none;
+  color: var(--secondary-color);
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Raleway";
+}
+
+.item2-btn,
+.item4-btn,
+.item5-btn{
+  background-color: var(--small-button);
+}
+
+.item1-btn{
+  background-color: var(--sub-button-color);
+  position: relative;
+  top: -20px;
+  left: 40px;
+}
+
+.item2-btn{
+  position: relative;
+  top: -20px;
+  left: 35px;
+}
+
+.item3-btn{
+  background-color: var(--purple-color);
+  position: relative;
+  top: -20px;
+  left: 35px;
+}
+
+.item4-btn{
+  position: relative;
+  top: -20px;
+  left: 35px;
+}
+
+.item5-btn{
+  position: relative;
+  top: -20px;
+  left: 35px;
+}
+
+.main-story-item-title{
+  font-size: 1.5rem;
+  padding: 1.25rem 2.5rem;
+  font-family: "Quicksand";
+}
+
+.main-story-description{
+  font-size: 1rem;
+  font-family: "Raleway";
+  font-weight: 500;
+  color: var(--paragraph-color);
+  padding: 1.5rem 2.5rem;
+}
+
+.story-item-title{
+  font-size: 1rem;
+  font-family: "Quicksand";
+  font-weight: 600;
+  padding: 0 1.5rem;
+}
 /* Small Device Responsive */
 @media screen and (max-width: 576px) {
   .hamburg-nav{
@@ -267,7 +359,7 @@
   }
   .section{
     margin: 0;
-    width: 90vw;
+    width: 100vw;
   }
   .logo-title,
   .main-menu,
@@ -313,5 +405,49 @@
 
   .arrow-btn{
     display: none;
+  }
+
+  .stories-title{
+    margin: 1.5rem auto;
+    font-size: 2rem;
+  }
+  .story-section1{
+    display: none;
+  }
+
+  .story-section2{
+    gap: .5rem;
+  }
+
+  .story-btn{
+    padding: 5px 10px;
+    border-radius: 1.5rem;
+    font-size: .5rem;
+  }
+
+  .story-item-title{
+    font-size: .8rem;
+    font-weight: 600;
+    padding: 0 0.5rem 1rem 1rem;
+  }
+  
+  .item2-btn{
+    top: -15px;
+    left: 12px;
+  }
+  
+  .item3-btn{
+    top: -15px;
+    left: 12px;
+  }
+  
+  .item4-btn{
+    top: -15px;
+    left: 12px;
+  }
+  
+  .item5-btn{
+    top: -15px;
+    left: 12px;
   }
 }
