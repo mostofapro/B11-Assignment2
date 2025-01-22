@@ -79,6 +79,16 @@
 
 /* Header Area Styles */
 
+/* Marquee Styles */
+marquee{
+  background-color: rgba(243, 163, 14, 0.638);
+  height: 40px;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
 /* Navigation Section */
 .nav-area{
   justify-content: space-between;
@@ -180,6 +190,7 @@
   background-repeat: no-repeat;
   margin-top: 4rem;
 }
+
 .curriculum-title{
   text-align: center;
   font-size: 2.5rem;
@@ -198,8 +209,8 @@
 .curriculum-card1{
   background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
   border: 1px solid rgb(222, 245, 255);
-
 }
+
 .curriculum-card2{
   background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
   border: 1px solid rgb(255, 244, 220);
@@ -236,6 +247,7 @@
   text-align: center;
   margin-bottom: 3.5rem;
 }
+
 .btn-left,
 .btn-right{
   background-color: var(--button-color);
@@ -244,8 +256,14 @@
   border: none;
   border-radius: 2rem;
 }
+
 .arrow{
   color: var(--secondary-color);
+}
+
+.btn-left:hover,
+.btn-right:hover{
+  background-color: var(--sub-button-color);
 }
 
 /* Stories Section Style */
@@ -272,6 +290,7 @@
   gap: 1rem;
   margin-bottom: 5rem;
 }
+
 .item-story1,
 .item-story2,
 .item-story3,
@@ -465,6 +484,9 @@
   }
 
   .arrow-btn{
+    display: none;
+  }
+  marquee{
     display: none;
   }
 
