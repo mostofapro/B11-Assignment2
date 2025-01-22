@@ -551,3 +551,100 @@ marquee{
     margin-bottom: 1rem;
   }
 }
+
+/* Medium Device Responsive */
+@media screen and (min-width: 576.01px) and (max-width: 992px) {
+  .hamburg-nav{
+    display: block;
+  }
+
+  .logo-title,
+  .main-menu,
+  .nav-btn{
+    display: none;
+  }
+
+  .banner-img{
+    width: 50%;
+  }
+
+  .footer-area{
+    flex-direction: column;
+    height: auto;
+  }
+  .about-school{
+    width: 90vw;
+    margin-bottom: 1.5rem;
+    margin-left: 20px;
+  }
+  .footer-nav,
+  .contact-info{
+    margin-left: 1.25rem;
+  }
+  .contact-info{
+    margin-bottom: 1rem;
+  }
+
+  .banner{
+    flex-direction: column-reverse;
+  }
+
+  .banner-img{
+    width: 80%;
+  }
+
+  .banner-content{
+    width: 90vw;
+    text-align: center;
+  }
+  
+  .banner-title{
+    font-size: 2.5rem;
+  }
+  .banner-description{
+    font-size: 1rem;
+  }
+
+  .curriculum-area{
+    grid-template-columns: repeat(1, 1fr);
+    margin: 1rem auto;
+  }
+
+  .story-section1{
+    display: none;
+  }
+
+  .story-section2{
+    gap: .5rem;
+  }
+
+  .item2-btn{
+    top: -15px;
+    left: 12px;
+  }
+  
+  .item3-btn{
+    top: -15px;
+    left: 12px;
+  }
+  
+  .item4-btn{
+    top: -15px;
+    left: 12px;
+  }
+  
+  .item5-btn{
+    top: -15px;
+    left: 12px;
+  }
+
+  .story-item-title{
+    font-size: .8rem;
+    font-weight: 600;
+    padding: 0 0.5rem 1rem 1rem;
+  }
+  
+  marquee{
+    display: none;
+  }
+}
