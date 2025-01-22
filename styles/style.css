@@ -6,10 +6,19 @@
   font-weight: 400;
   font-style: normal;
 }
-.quicksand-font{
+
+.quicksand-font,
+.header-area,
+.nav-btn,
+.btn-primary,
+.curriculum-title,
+.curriculum-card-title,
+.card1-link,
+.stories-title{
   font-family: "Quicksand", serif;
 }
-.raleway-font {
+.raleway-font,
+.curriculum-card-description{
   font-family: "Raleway", serif;
 }
 
@@ -242,7 +251,6 @@
 /* Stories Section Style */
 .stories-area{
   background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
-  /* text-align: center; */
 }
 
 .stories-title{
@@ -352,6 +360,59 @@
   font-weight: 600;
   padding: 0 1.5rem;
 }
+
+/* Footer Area Styles */
+.footer-area{
+  background-color: var(--footer-color);
+  height: 50vh;
+  justify-content: space-around;
+  padding-top: 5rem;
+}
+
+.about-school{
+  width: 30vw;
+ 
+}
+
+.about-header{
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer-title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  
+}
+
+.about-description{
+  font-size: 1.25rem;
+}
+
+.footer-nav-title,
+.contact-info-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+.footer-title,
+.about-description,
+.footer-nav-title,
+.nav-item,
+.contact-info-title{
+  color: var(--secondary-color);
+}
+
+.nav-item{
+  font-size: 1.25rem;
+}
+
+.footer-nav-items > li{
+  padding-bottom: 1.25rem;
+}
+
 /* Small Device Responsive */
 @media screen and (max-width: 576px) {
   .hamburg-nav{
@@ -449,5 +510,22 @@
   .item5-btn{
     top: -15px;
     left: 12px;
+  }
+
+  .footer-area{
+    flex-direction: column;
+    height: auto;
+  }
+  .about-school{
+    width: 90vw;
+    margin-bottom: 1.5rem;
+    margin-left: 20px;
+  }
+  .footer-nav,
+  .contact-info{
+    margin-left: 1.25rem;
+  }
+  .contact-info{
+    margin-bottom: 1rem;
   }
 }
